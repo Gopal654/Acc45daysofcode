@@ -1,0 +1,23 @@
+#include <stdio.h>
+void printHello();
+void printGoodbye();
+int main()
+{
+int n;
+printf("enter the no.");
+scanf("%d",&n);
+
+    for(int i=0;i<=n;i++){
+        printHello();
+        printGoodbye ();
+    }
+return 0;
+    }
+
+void printHello(){
+    printf("Hello\n");
+     }
+
+void printGoodbye(){
+    printf("Goodbye\n");
+    }
