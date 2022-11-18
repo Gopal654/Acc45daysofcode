@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main() {
+    int x, y;
+ printf("enter the required passing marks:");
+  scanf("%d",&y);
+ printf ("enetr the marks student score:");
+  scanf("%d",&x);
+  if(x>=y){
+      printf (":Pass");
+  }else{
+      printf (":Fail");
+  }
+
+    return 0;
+}
