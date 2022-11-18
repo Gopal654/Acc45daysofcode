@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int x, y,rem;
+   printf("enter the water quantity:");
+    scanf("%d",&x);
+    printf("enter bottle capacity:");
+    scanf("%d",&y);
+    if(x%y==0){
+     rem=x/y;
+   printf("needed bottle are:%d",rem);
+    }else if(x%y!=0){
+        rem=x/y;
+  printf("needed bottle are:%d",rem+1);
+    }
+      return 0;
+}
