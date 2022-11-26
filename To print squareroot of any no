@@ -1,0 +1,20 @@
+
+#include<stdio.h>
+#include<math.h>
+void main ()
+{
+  int n;
+  printf ("enter number:");
+  scanf ("%d", &n);
+  float x = sqrt (n);
+  int a;
+  a = x;
+  if (a == x)
+    {
+      printf ("%d", a);
+    }
+  else
+    {
+      printf ("0");
+    }
+}
