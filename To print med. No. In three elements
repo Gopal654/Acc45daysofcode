@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int x, y, z;
+    printf("Enter the numbers:");
+    scanf("%d %d %d",&x,&y,&z);
+    if(x<y&&x>z||x>y&&x<z){
+        printf ("mid no. is:: %d",x);
+    }else if(y<x&&y>z||y>x&&y<z){
+        printf ("mid no. is:: %d",y);
+    }else if(z<x&&z>y||z>x&&z<y){
+        printf ("mid no. is:: %d",z);
+    }
+    return 0;
+}
