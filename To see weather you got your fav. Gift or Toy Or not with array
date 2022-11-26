@@ -1,0 +1,25 @@
+
+#include<stdio.h>
+void
+main (){
+   int n, x, I, k = 0;		  
+   printf ("enter your fav gifts & fav toy:");
+  scanf ("%d %d", &n, &x);
+  
+  printf ("enter the gift you got:\n");
+      for (int i=1;i<=n;i++)
+    {
+      scanf ("%d", &I);
+      if (I == x)
+	{
+	  k++;
+	}  
+    }
+  if (k > 0){
+      printf ("favorite gift");
+    } 
+    else
+    {
+      printf ("not favourate gift");
+    }
+}
