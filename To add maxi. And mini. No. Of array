@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <limits.h>
+int main() {
+   int n,i,maxi=INT_MIN,mini=INT_MAX, sum,a[n];
+    printf("enter the size:");
+    scanf("%d",&n);
+    printf ("no.to be added:");
+    for(i=0;i<n;i++){
+        scanf ("%d",&a[i]);
+    if(a[i]>maxi){
+        maxi=a[i];
+       } if(a[i]<mini){
+            mini=a[i];
+        }
+    }
+        sum=maxi+mini;
+    printf ("sum is:%d",sum);
+
+    return 0;
+}
