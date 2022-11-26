@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() {
+    int x, y, m, n, z;
+    float P,D;
+    printf("enter value of Diesel & Petrol:");
+    scanf("%d %d",&x,&y);
+    printf ("enter the average of Diesel & Petrol car:");
+    scanf("%d %d",&m,&n);
+    printf("enter the distance to travel:");
+    scanf ("%d",&z);
+    
+     D=x/m*z;
+     P=y/n*z;
+     
+     if(P>D){
+         printf ("Diesel");
+     }
+     else if(P<D){
+         printf ("Petrol");
+     }else
+     printf ("it will cost equally");
+
+    return 0;
+}
