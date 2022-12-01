@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+   int n,i,rem,sum=0;
+     scanf("%d",&n);
+    i=n;
+    while(i!=0){
+        rem=i%10;
+        sum=sum*10+rem;
+        i=i/10;
+    }if(sum==n){
+    printf("No. is palindrom");
+}else 
+printf("No. is not palindrom");
+    return 0;
+}
