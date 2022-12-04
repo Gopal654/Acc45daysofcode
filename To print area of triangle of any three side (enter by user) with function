@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+float Area(float, float, float);
+    int main(){
+    float a, b, c;
+    printf ("enter sides:");
+    scanf("%f %f %f",&a,&b,&c);
+    printf ("area is:%f",Area(a,b,c));
+    return 0;
+} 
+float Area(float x, float y, float z){
+  if(x<0||y<0||z<0||(x+y)<=z||(x+z)<=y ||(y+z)<=x){
+    printf ("not a valid triangle");
+    exit (0);
+    }
+    float s=(x+y+z)/2;
+    return sqrt(s*(s-x)*(s-y)*(s-z));
+    }
