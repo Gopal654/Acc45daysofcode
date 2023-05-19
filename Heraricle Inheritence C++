@@ -1,0 +1,75 @@
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+class Base{
+  private:
+  int a,b;
+  public:
+  int c,d,e;
+   Base(){
+      cout<<"Base class A constructor\n";
+    }
+  void getdata(int a,int b,int c);
+  void printdata(){
+      cout<<"Your data:\n"<<a<<endl<<b<<endl<<c<<endl<<d<<endl<<e<<endl<<a+b+c+d+e<<endl;
+  
+      cout<<endl;
+  }
+    
+};
+void Base::getdata(int a1,int b1,int c1){
+    a=a1;
+    b=b1;
+    c=c1;
+}
+
+
+class B:public Base{
+    public:
+    B(){
+      cout<<"Base class B constructor\n";
+    }
+};
+
+
+class C:public Base{
+    public:
+    C(){
+    cout<<"Base class C constructor\n";
+     }
+};
+
+class D:public B,public C{
+     public:
+        D(){
+        cout<<"Base class D constructor\n";
+      }
+};
+int main()
+{
+    int x,y,z,t,r;
+    cout<<"Enter the value to perform action: ";
+    cin>>x>>y>>z>>t>>r;
+   Base obj1;
+   obj1.getdata(x,y,z);
+   obj1.d=t;
+   obj1.e=r;
+   obj1.printdata();
+
+    
+   B obj;
+  obj.getdata(z,t,r);
+   obj.d=x;
+   obj.e=y;
+   obj.printdata();
+
+   C obj2;
+   obj2.getdata(x,t,r);
+   obj2.d=y;
+   obj2.e=z;
+   obj2.printdata();
+
+   D obj4;
+    return 0;
+}
+  
